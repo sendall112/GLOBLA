@@ -2505,7 +2505,7 @@ data = {
 {text = '‹ تفعيل الايدي ›', data = msg.sender.user_id..'/'.. 'mute_IdPhoto'},
 },
 {
-{text = '『 𝗦𝗼𝘂𝗿𝗰𝗲 GLOBLA』', url = 't.me/GLOBLA'},
+{text = '『 𝗦𝗼𝘂𝗿𝗰𝗲 』', url = 't.me/telegram'},
 },
 }
 }
@@ -9087,8 +9087,6 @@ local T = '* ❲ 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓𝒔 𝑩𝒐𝒕 ❳\n— 
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '.َ ‹ 𝗦𝗼𝘂𝗿𝗰𝗲 NIGHTMARE ⁦⁦.𖨬', url = "https://t.me/GLOBLA"}
-},
 }
 local msgg = msg_id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo="..photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id.."&caption=".. URL.escape(T).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
